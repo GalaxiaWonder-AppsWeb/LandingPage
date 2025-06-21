@@ -14,6 +14,6 @@ export class AboutTheTeamComponent {
   videoUrl: SafeResourceUrl;
 
   constructor(private sanitizer: DomSanitizer) {
-    this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/yz81Fjm4GxY');
+    this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/gIl7WOXeetc');
   }
 }
