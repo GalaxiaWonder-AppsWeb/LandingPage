@@ -60,3 +60,9 @@
     padding: 10vh 5vw; /* Más espaciado para pantallas pequeñas */
   }
 }
+
+.video-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; /* Centra el contenedor */
+}
