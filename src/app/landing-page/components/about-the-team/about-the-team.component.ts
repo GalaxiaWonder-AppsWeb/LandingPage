@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {  TranslatePipe } from '@ngx-translate/core';
-import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
+import { TranslatePipe } from '@ngx-translate/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-about-the-team',
@@ -8,12 +8,13 @@ import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
     TranslatePipe
   ],
   templateUrl: './about-the-team.component.html',
-  styleUrl: './about-the-team.component.css'
+  styleUrls: ['./about-the-team.component.css']
 })
 export class AboutTheTeamComponent {
   videoUrl: SafeResourceUrl;
 
   constructor(private sanitizer: DomSanitizer) {
-    this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/yz81Fjm4GxY');
+    // Usa la URL embebida
+    this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/gIl7WOXeetc');
   }
 }
